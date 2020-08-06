@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="application/javascript">
+        window.onload = function () {
+            var img = document.getElementById('Img');
+            var imgWidth = img.width;
+            var imgHeight = img.height;
+            console.log('js', imgWidth, imgHeight); // 120 45
+        };
+        $(function () {
+            var img = $('#Img');
+            var imgWidth = img.width();
+            var imgHeight = img.height();
+            console.log('jQuery', imgWidth, imgHeight); // 120 45
+        });
+    </script>
+</head>
+<body>
+<div align="center"><img id="Img" src="http://butter255.byethost22.com" 
+</body>
+</html>
